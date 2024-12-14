@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="static/main.css" />
+	<title>Electric Dreams</title>
+</head>
+
+<body>
+	<div class="container">
+		<canvas id="glCanvas">
+			Your browser does not support HTML5
+		</canvas>
+		<input type="color" id="backgroundColorPicker">
+		<div id="controlPanel">
+			<div>
+				<label for="shaderToggle">Toggle Realistic Shader:</label>
+				<input type="checkbox" id="shaderToggle" name="shaderToggle">
+			</div>
+			<div>
+				<label for="terrainColorPicker">Terrain Hue:</label>
+				<input type="range" id="terrainColorPicker" min="0" max="360" value="180" step="1">
+			</div>
+			<div>
+				<label for="speed-slider">Speed:</label>
+				<input type="range" id="speed-slider" min="0" max="1.0" value="0.1" step="0.01">
+			</div>
+			<div>
+				<label for="mid-slider">Mids Factor:</label>
+				<input type="range" id="mid-slider" min="0" max="10.0" value="5.0" step="0.2">
+			</div>
+			<div>
+				<label for="bass-slider">Bass Factor:</label>
+				<input type="range" id="bass-slider" min="0" max="10.0" value="3.0" step="0.2">
+			</div>
+			<div>
+				<label for="noiseScale">Noise Factor:</label>
+				<input type="range" id="noiseScale" min="0" max="5" step="0.1" value="1">
+			</div>
+			<div>
+				<label for="vertexFactor">Vertex Factor:</label>
+				<input type="range" id="vertexFactor" min="1" max="50" value="10">
+			</div>
+			<div>
+				<label for="sun-slider">Sun:</label>
+				<input type="range" id="sun-slider" min="0" max="0.45" value="0.1" step="0.01">
+			</div>
+		</div>
+	</div>
+	<script type="module" src="./index.js"></script>
+</body>
+
+</html>

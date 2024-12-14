@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "file-system-access": "^1.0.4",
+    "simplex-noise": "^4.0.1"
+  }
+}
